@@ -1,0 +1,28 @@
+{
+   "content_scripts": [ {
+      "js": [ "src/boot.js", "src/jogo-bundle.js", "src/hook.js", "src/game.js", "src/ritmo.js", "src/engine.js", "src/geo.js", "src/ui.js" ],
+      "matches": [ "https://pokeidle.io/*" ],
+      "run_at": "document_start",
+      "world": "MAIN"
+   }, {
+      "css": [ "src/ui.css" ],
+      "matches": [ "https://pokeidle.io/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "src/wishlist-ponte.js" ],
+      "matches": [ "https://pokeidle.io/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Mostra, acima do seu pokémon em campo no PokeIdle, onde caçar: as melhores hunts por XP/h e ouro/h, com os dados do jogo.",
+   "icons": {
+      "128": "icons/icon-128.png",
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvCuT8T0fVVsYPn0GRHMAiwP4qjexWFNJfgvgiftYQHOH5IthRIGVthU062s1AsyCMmHD8z84h/hKlkHXhrEktgcdH2MkICKZV8gk04hiPXUqTn5jouJQkMwu9LcqxrXxxZAT5r/Wejjd3K8+yVLSZbjWRCd+3U7+8J36VWeg1m0UIWWUrz6Xvs5GOV0TH9+bCbmq367urdlW7HjjR3UWpyx+ptCIAmXU9mwTyiS/8G3yi2Kgk8IiNKmwOFtdO2aoLIJgCkkpPI9DlLsBmG3NO6gHRbVLUVPG5krM0Y1XsYfVRSV6AP0RaDNkZk7NNRyEy2MVsS1sDy1pXejDcoYSMQIDAQAB",
+   "manifest_version": 3,
+   "name": "/hunt for PokeIdle",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.20"
+}

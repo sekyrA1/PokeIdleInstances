@@ -1,0 +1,15 @@
+# Build artifacts
+bin/
+obj/
+*.pdb
+*.user
+*.suo
+.vs/
+
+# User session, cookies, cache and local settings (NEVER commit)
+WebView2Data/
+config.json
+
+# Temporary release packaging
+release_pkg/
+*.zip
